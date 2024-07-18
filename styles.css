@@ -7,34 +7,6 @@
     font-family: "Ubuntu", sans-serif;
 }
 
-.logo-text {
-    color: white;
-    font-weight: bold;
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.logo-text img {
-    height: 1em;
-    width: auto;
-}
-
-#sidebar {
-    background-color: var(--primary-color);
-    padding: var(--area-padding);
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-#sidebar > *:not(:first-child) {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-}
-
 /* LAYOUT */
 body,
 html {
@@ -86,6 +58,50 @@ main {
 
 #trending-section {
     grid-area: trending;
+}
+
+/* SIDEBAR AREA */
+#sidebar {
+    background-color: var(--primary-color);
+    padding: var(--global-padding);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--global-padding) * 2);
+}
+
+#sidebar > :first-child.icon-text {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    gap: var(--global-padding);
+}
+
+#sidebar > :first-child.icon-text img {
+    height: 1.5em;
+    width: auto;
+}
+
+#sidebar > :not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    gap: var(--global-padding);
+}
+
+#sidebar > :not(:first-child) .icon-text {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    gap: var(--global-padding);
+    text-decoration: none;
+}
+
+#sidebar > :not(:first-child) img {
+    height: 1.5em;
+    width: auto;
 }
 
 /* HEADER AREA */
