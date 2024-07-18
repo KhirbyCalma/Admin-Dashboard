@@ -40,6 +40,9 @@ main {
     ;
     grid-template-columns: 1fr min-content;
     grid-template-rows: min-content 1fr;
+    gap: var(--global-spacing);
+    padding: var(--global-spacing);
+    background-color: lightgrey;
 }
 
 #projects-section {
@@ -240,11 +243,17 @@ header #user-actions button:disabled {
 /* MAIN AREA */
 /* YOUR PROJECTS */
 main #projects-section {
-    padding: var(--area-padding);
+    display: flex;
+    flex-direction: column;
+    gap: var(--global-spacing);
 }
 
-main #projects-section .projects {
-    padding: 1rem;
+main #projects-section h1 {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-direction: column;
+    gap: var(--global-spacing);
 }
 
 main #projects-section .projects .project {
@@ -255,6 +264,7 @@ main #projects-section .projects .project {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-left: 8px solid var(--secondary-color);
     border-radius: 8px;
+    background-color: white;
 }
 
 main #projects-section .projects .project .text h2 {
@@ -262,10 +272,18 @@ main #projects-section .projects .project .text h2 {
 }
 
 main #projects-section .projects .project .actions {
+    display: flex;
+    align-items: center;
+    gap: var(--global-spacing);
     margin-left: auto;
+    margin-top: auto;
 }
 
-main #projects-section .projects .project .actions button img {
+main #projects-section .projects .project .actions a {
+    text-decoration: none;
+}
+
+main #projects-section .projects .project .actions a img {
     height: 1.5rem;
     width: auto;
 }
