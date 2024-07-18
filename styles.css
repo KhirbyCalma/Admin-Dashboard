@@ -289,27 +289,25 @@ main #projects-section .projects .project .actions a img {
 }
 
 /* ANNOUNCEMENTS AREA*/
-#announcements-section {
+main #announcements-section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--global-spacing);
 }
 
-#announcements-section .announcements {
+main #announcements-section .announcements {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: calc(var(--global-spacing) / 2);
     padding: 1rem;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
-}
-
-#announcements-section .announcements .announcement {
-    padding-bottom: 1rem;
+    background-color: white;
 }
 
 #announcements-section .announcements .announcement:not(:last-child) {
     border-bottom: 1px solid lightgrey;
+    padding-bottom: 1rem;
 }
 
 #announcements-section h1 {
