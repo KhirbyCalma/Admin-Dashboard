@@ -323,7 +323,7 @@ main #announcements-section .announcements {
 #trending-section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--global-spacing);
 }
 
 #trending-section h1 {
@@ -332,18 +332,19 @@ main #announcements-section .announcements {
 }
 
 #trending-section .accounts {
-    padding: 1rem;
+    padding: var(--global-spacing);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: var(--global-spacing);
+    background-color: white;
 }
 
 #trending-section .accounts .account {
     font-size: 2rem;
     display: flex;
-    gap: 1rem;
+    gap: var(--global-spacing);
     align-items: center;
 }
 
